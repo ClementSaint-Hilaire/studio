@@ -19,7 +19,7 @@ body {
 }
 
 .landingpage {
-    display: 100vw;
+    width: 100vw;
     height: auto;
     min-height: 100vh;
     display: flex;
@@ -43,7 +43,6 @@ body {
     justify-content: center;
     align-items: center;
     line-height: 50px;
-
 }
 .textContainer h1 {
     position: relative;
@@ -70,17 +69,27 @@ body {
     transform: translate(-50%, -50%);
 }
 .vide {
+    height: 50vh;
+}
+.listeCompetences {
+    position: relative;
+    display: flex;
+    width: 100vw;
     height: 100vh;
+    top: 0;
+    margin: 0 auto;
+    background: transparent;
 }
 .overlayText {
     background: transparent;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    top: 50vh;
+    position: absolute;
+    top: 90vh;
 }
 .overlayText li {
     text-decoration: none;

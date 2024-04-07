@@ -19,17 +19,17 @@
             <img src="../img/studio display.png" id="studioImage">
         </div>
     </section>
-    <div class="vide"></div>
-
-    <ul id="overlayText" class="overlayText">
-        <li>Web design</li>
-        <li>Photography</li>
-        <li>Code</li>
-        <li>Writing</li>
-        <li>Video & photo composition</li>
-        <li>Music</li>
-        <li>Digital art</li> 
-    </ul>
+    <div class="listeCompetences">
+        <ul id="overlayText" class="overlayText">
+            <li>Web design</li>
+            <li>Photography</li>
+            <li>Code</li>
+            <li>Writing</li>
+            <li>Video & photo composition</li>
+            <li>Music</li>
+            <li>Digital art</li> 
+        </ul>
+    </div>
     <div class="vide"></div>
 
         <script type="text/javascript">
