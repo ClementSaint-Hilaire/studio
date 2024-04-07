@@ -69,17 +69,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.vide {
+    height: 100vh;
+}
 .overlayText {
     background: transparent;
-    position: relative;
-    top: 99%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    top: 50vh;
 }
-.overlayText h1 {
+.overlayText li {
+    text-decoration: none;
     color: var(--blanc1);
     font-size: 79px;
     font-family: 'Satoshi-Black';
+    margin-bottom: 80vh;
     background: transparent;
     position: relative;
     top: 99%;
