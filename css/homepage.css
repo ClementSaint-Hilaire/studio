@@ -30,7 +30,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-    top: 80px;
+    top: -145px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +57,33 @@ body {
     font-size: 79px;
     font-family: 'Satoshi-Black';
     margin-bottom: 60px;
+}
+#studioImage {
+    height:auto;
+    width: 40%;
+    max-width: 120%;
+    transition: width 0.5s;
+
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlayText {
+    background: transparent;
+    position: relative;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlayText h1 {
+    color: var(--blanc1);
+    font-size: 79px;
+    font-family: 'Satoshi-Black';
+    background: transparent;
+    position: relative;
+    top: 99%;
+    left: 50%;
 }
 
 @media screen and (min-width: 1440pt) {
