@@ -22,6 +22,7 @@
     <div class="listeCompetences">
         <ul id="overlayText" class="overlayText">
             <li>Web design</li>
+            <li>Web design</li>
             <li>Photography</li>
             <li>Code</li>
             <li>Writing</li>
@@ -31,6 +32,9 @@
         </ul>
     </div>
     <div class="vide"></div>
+    <div class="vide"><p>1</p></div>
+    
+
 
         <script type="text/javascript">
             const img = document.getElementById('studioImage');
@@ -51,6 +55,25 @@
                     img.style.width = 40 - + window.pageYOffset/4 + '%'; 
                 }
             });
+
+            window.addEventListener('scroll', function(){
+                var newWidth = 40 + window.pageYOffset / 4 + '%';
+
+                if (parseInt(img) >= 950) {
+                    img.style.width = '150%'; 
+                    overlayText.style.display = 'none';
+                } else {
+                    img.style.width = newWidth; 
+                    overlayText.style.display = 'flex';
+                }
+            
+                // Réinitialisez le style de fond si la largeur dépasse 1170%
+                if (parseInt(newWidth) >= 1170) {
+                    landingpage.style.background = 'none';
+                    img.style.width = '40%'; // Réinitialisez la largeur à 40%
+                }
+            });
+
 </script>
 
 </body>
